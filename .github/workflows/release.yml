@@ -35,5 +35,6 @@ jobs:
           version: pnpm run version     # 自定义版本命令
           # commit: 'chore: update versions'  # 提交信息
           # title: 'chore: update versions'   # PR 标题
+          publish: pnpm --version
       env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
